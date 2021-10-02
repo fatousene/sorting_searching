@@ -1,0 +1,15 @@
+ALGORITHM Sorting_searching 
+VAR
+    table : ARRAY_OF INTEGER[length];
+    i,j:INTEGER;
+BEGIN
+    FOR i FROM 0 TO table.length-1 STEP step  DO
+        IF (table[i+1]<table[i]) THEN
+            j := table[i+1];
+            table[i+1] := table[i];
+            table[i] : =j;
+        END_IF
+
+
+    END_FOR
+END
